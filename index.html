@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Determinant</title>
+     <link rel="stylesheet" href="style.css">
+     <script src="script.js" defer></script>
+     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+     </script>
+
+</head>
+
+<body>
+     <div id="container">
+          <!-- <h2>Enter 9 numbers</h2> -->
+          <input type="text" id="matrix-inp" placeholder="1,2,3,4,5,6,7,8,9" required list="numbers" />
+          <datalist id="numbers">
+               <option value="1,2,3,4,5,6,7,8,9">Sample Input</option>
+               <option value="9,8,7,6,5,4,3,2,1">Sample Input</option>
+               <option value="9,7,-2,-6,5,7,4,-8,1">Sample Input</option>
+          </datalist>
+          <h6 id="info">Enter 9 comma separated numbers: (<span id="count">0</span>/9)</h6>
+          <hr id="hr-1">
+          <h4 id="your-matrix"><i>Your matrix:</i></h4>
+          <p id="matrix">
+               \[
+               \text{A} = \begin{bmatrix}
+               a_{1} & a_{2} & a_{3} \\
+               b_{1} & b_{2} & b_{3} \\
+               c_{1} & c_{2} & c_{3}
+               \end{bmatrix}
+               \]
+          </p>
+          <hr>
+          <div id="determinant">
+          <h4><i>Determinant:</i></h4>
+          <p id="det-bars">
+               \[
+               \text det(A) = \begin{vmatrix}
+               a_{1} & a_{2} & a_{3} \\
+               b_{1} & b_{2} & b_{3} \\
+               c_{1} & c_{2} & c_{3}
+               \end{vmatrix}
+               \]
+          </p>
+          <p id="det-steps">
+               \[
+               \text{det}(A) = a_{1} \cdot \begin{vmatrix}
+               b_{2} & b_{3} \\
+               c_{2} & c_{3} 
+               
+               \end{vmatrix} - a_{2} \cdot \begin{vmatrix}
+               b_{1} & b_{3} \\
+               c_{1} & c_{3}
+               \end{vmatrix} + a_{3} \cdot \begin{vmatrix}
+               b_{1} & b_{2} \\
+               c_{1} & c_{2}
+               \end{vmatrix}
+               \]
+          <p id="det">
+               \[
+               \left| A \right| = a_{1} \, (b_{2} \cdot c_{3} - b_{3} \cdot c_{2}) - a_{2} \, (b_{1} \cdot c_{3} - b_{3} \cdot c_{1}) + a_{3} \, (b_{1} \cdot c_{2} - b_{2} \cdot c_{1})
+               \]
+          </div>
+     </div>
+
+</body>
+
+</html>
