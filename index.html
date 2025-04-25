@@ -35,34 +35,42 @@
           </p>
           <hr>
           <div id="determinant">
-          <h4><i>Determinant:</i></h4>
-          <p id="det-bars">
-               \[
-               \text det(A) = \begin{vmatrix}
-               a_{1} & a_{2} & a_{3} \\
-               b_{1} & b_{2} & b_{3} \\
-               c_{1} & c_{2} & c_{3}
-               \end{vmatrix}
-               \]
-          </p>
-          <p id="det-steps">
-               \[
-               \text{det}(A) = a_{1} \cdot \begin{vmatrix}
-               b_{2} & b_{3} \\
-               c_{2} & c_{3} 
-               
-               \end{vmatrix} - a_{2} \cdot \begin{vmatrix}
-               b_{1} & b_{3} \\
-               c_{1} & c_{3}
-               \end{vmatrix} + a_{3} \cdot \begin{vmatrix}
-               b_{1} & b_{2} \\
-               c_{1} & c_{2}
-               \end{vmatrix}
-               \]
-          <p id="det">
-               \[
-               \left| A \right| = a_{1} \, (b_{2} \cdot c_{3} - b_{3} \cdot c_{2}) - a_{2} \, (b_{1} \cdot c_{3} - b_{3} \cdot c_{1}) + a_{3} \, (b_{1} \cdot c_{2} - b_{2} \cdot c_{1})
-               \]
+               <h4><i>Determinant:</i></h4>
+               <p id="det-bars">
+                    \[
+                    \text det(A) = \begin{vmatrix}
+                    a_{1} & a_{2} & a_{3} \\
+                    b_{1} & b_{2} & b_{3} \\
+                    c_{1} & c_{2} & c_{3}
+                    \end{vmatrix}
+                    \]
+               </p>
+<p id="det-steps">
+\[
+\begin{aligned}
+\text{det}(A) = &\ a_{1} \cdot \begin{vmatrix}
+b_{2} & b_{3} \\
+c_{2} & c_{3}
+\end{vmatrix} \\
+& - a_{2} \cdot \begin{vmatrix}
+b_{1} & b_{3} \\
+c_{1} & c_{3}
+\end{vmatrix} \\
+& + a_{3} \cdot \begin{vmatrix}
+b_{1} & b_{2} \\
+c_{1} & c_{2}
+\end{vmatrix}
+\end{aligned}
+\]
+</p>
+               <p id="det">
+                    \[
+                    \begin{aligned}
+                    \left| A \right| = a_{1} \, (b_{2} \cdot c_{3} - b_{3} \cdot c_{2}) - a_{2} \, (b_{1} \cdot c_{3} -
+                    b_{3} \cdot c_{1}) + a_{3} \, (b_{1} \cdot c_{2} - b_{2} \cdot c_{1})
+                    \end{aligned}
+                    \]
+               </p>
           </div>
      </div>
 

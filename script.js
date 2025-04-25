@@ -1,4 +1,5 @@
 let counter = document.getElementById("counter");
+let determinant = document.getElementById("determinant");
 // let yourMatrix = document.getElementById("your-matrix");
 
 
@@ -19,6 +20,8 @@ matrixInp.addEventListener('input', () => {
     \\end{bmatrix} 
     \\]
 `
+     //? matrixArray.length == 9 && matrixArray.every(Number) ? (determinant.style.display = "block") : (determinant.style.display = "none");
+
      MathJax.typeset();
 });
 

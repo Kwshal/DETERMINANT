@@ -2,13 +2,15 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     transition: all 0.3s ease;
+     transition: all 0.3s ease, font-size 0s ease;
 }
 
 body {
      font-family: Arial, sans-serif;
      background-color: #fafafa;
      /* min-height: 100vh; */
+     height: 100vh;
+     width: 100vw;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -22,11 +24,15 @@ body {
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     width: 90%;
-     max-width: 90%;
+     width: 400px;
+     max-width: 400px;
      height: 100vh;
      padding: 20px;
      margin: 20%;
+     border: 1px solid #000;
+}
+#determinant{
+     display: none;
 }
 p{
      overflow: hidden;
@@ -56,13 +62,15 @@ p{
      margin: 0;
      padding: 0;
      }
-#matrix-inp::placeholder-shown ~ #your-matrix {
-     font-size: 0;
-     margin: 0;
-}
 #matrix-inp:not(:placeholder-shown) ~ #your-matrix {
-     margin: 20px 0 0 0;
+     display: block;
+     margin: 20px 0px 0px 0px;
      font-size: 1.2rem;
+}
+#your-matrix {
+     display: none;
+     margin: 0px 0px 0px 0px;
+     font-size: 0px;
 }
 
 hr {
